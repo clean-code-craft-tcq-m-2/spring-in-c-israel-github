@@ -21,13 +21,13 @@ int main(void)
 Stats_t compute_statistics(const float* numberset, int setlength)
 {
 	Stats_t s = {0, 0, 0};
-	int i = 0;
+	int i;
 
 	if (setlength > 0)
 	{
 		s.min = numberset[0];
 
-		for (i; i < setlength; i++)
+		for (i = 0; i < setlength; i++)
 		{
 			s.average += numberset[i];
 
