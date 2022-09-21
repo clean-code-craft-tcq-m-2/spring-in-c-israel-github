@@ -13,7 +13,7 @@ int main(void)
 
 	stats = compute_statistics(data, dataLen);
 
-	check_and_alert(maxThreshold, alerters, computedStats);
+	check_and_alert(maxThreshold, alerters, stats);
 
 	return 0;
 }
@@ -27,7 +27,7 @@ Stats_t compute_statistics(const float* numberset, int setlength)
 	{
 		s.min = numberset[0];
 
-		for (i, i < setlength, i++)
+		for (i; i < setlength; i++)
 		{
 			s.average += numberset[i];
 
