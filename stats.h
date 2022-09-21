@@ -7,7 +7,7 @@ typedef struct Stats_s
 	float max;
 } Stats_t;
 
-typedef void (*alerter_funcptr)();
+typedef void (*alerter_funcptr)(void);
 
 Stats_t compute_statistics(const float* numberset, int setlength);
 
