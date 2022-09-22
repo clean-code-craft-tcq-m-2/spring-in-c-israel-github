@@ -4,20 +4,6 @@
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
 
-/* int main(void)
-{
-	Stats_t stats = {0, 0, 0};
-	const float data[] = {1.5, 8.9, 3.2, 4.5};
-	const float maxThreshold = 10.2;
-	int dataLen = sizeof(data)/sizeof(float);
-
-	stats = compute_statistics(data, dataLen);
-
-	check_and_alert(maxThreshold, alerters, stats);
-
-	return 0;
-} */
-
 Stats_t compute_statistics(const float* numberset, int setlength)
 {
 	Stats_t s = {0, 0, 0};
