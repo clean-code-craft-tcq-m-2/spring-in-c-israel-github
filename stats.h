@@ -11,8 +11,6 @@ typedef void (*alerter_funcptr)(void);
 
 Stats_t compute_statistics(const float* numberset, int setlength);
 
-alerter_funcptr alerters[] = {emailAlerter, ledAlerter};
-
 void check_and_alert(float maxThreshold, alerter_funcptr alert_array[], Stats_t computedStats);
 
 extern int emailAlertCallCount;
